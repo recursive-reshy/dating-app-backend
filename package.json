@@ -1,0 +1,17 @@
+{
+  "name": "dating-app-backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server",
+    "dev": "node --watch --env-file=.env server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  }
+}
