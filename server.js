@@ -1,6 +1,10 @@
 import express from 'express'
+import cors from 'cors'
+
+// DB
 import connectDb from './db/connect.js'
 
+// Routes
 import person from './routes/person.js'
 
 // App config
@@ -9,6 +13,7 @@ const PORT = process.env.PORT || 8000
 
 // Middleware
 app.use( express.json() )
+app.use( cors() )
 
 app.get( '/', ( req, res ) => res.status(200).send('Health check') )
 
